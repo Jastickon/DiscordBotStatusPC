@@ -6,10 +6,10 @@ from discord.ext import commands
 import os
 
 bot = commands.Bot(command_prefix='/', intents=discord.Intents.all())
-idvlad = ТВОЙ ID дискорда
+iddiscord = ТВОЙ ID дискорда
 @bot.command()
 async def status(ctx):
-    if idvlad == ctx.author.id:
+    if iddiscord == ctx.author.id:
         a = await ctx.send(ctx.author.mention)
         while True:
             ram1=psutil.virtual_memory().percent
